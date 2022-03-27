@@ -8,9 +8,9 @@ import os
 import infos
 import xdlink
 import mediafire
-from megacli.mega import Mega
-import megafolder as megaf
-import megacli.mega
+#from megacli.mega import Mega
+#import megafolder as megaf
+#import megacli.mega
 import datetime
 import time
 import youtube
