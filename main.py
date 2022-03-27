@@ -230,7 +230,7 @@ def onmessage(update,bot:ObigramClient):
         
 
         #AQUI EL USUARIO DE TELEGRAM
-        tl_admin_user = 'AQUI VA LE NOMBRE DE USUARIO DE TEELGRAM Q VA ADMINISTRAR EL BOT'
+        tl_admin_user = 'ThenKei'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -442,9 +442,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : TGMoodleFree v3.0\n'
-            start_msg+= 'Desarrollador: @obisoftdev\n'
-            start_msg+= 'Api          : https://github.com/Obysoftt/pyobigram\n'
+            start_msg = 'Bot          : HRSPAPK bot down\n'
+            start_msg+= 'Desarrollador: @ThenKei\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -520,7 +519,7 @@ def onmessage(update,bot:ObigramClient):
            print(str(ex))
 
 
-def hrsp():
+def main():
     
     #TOKEN DEL BOT
     bot_token = '5275651116:AAE33acfTx60Kr_TQWUYHsMyel6NeiVbdJU'
@@ -531,6 +530,6 @@ def hrsp():
 
 if __name__ == '__main__':
     try:
-        hrsp()
+        main()
     except:
-        hrsp()
+        main()
