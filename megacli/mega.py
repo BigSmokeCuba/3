@@ -15,7 +15,7 @@ import tempfile
 import shutil
 
 import requests
-from tenacity import retry, wait_exponential, retry_if_exception_type
+# from tenacity import retry, wait_exponential, retry_if_exception_type
 
 from .errors import ValidationError, RequestError
 from .crypto import (a32_to_base64, encrypt_key, base64_url_encode,
