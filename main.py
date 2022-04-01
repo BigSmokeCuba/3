@@ -230,7 +230,7 @@ def onmessage(update,bot:ObigramClient):
         
 
         #AQUI EL USUARIO DE TELEGRAM
-        tl_admin_user = 'ThenKei'
+        tl_admin_user = 'BigSmoke19'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -442,8 +442,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : HRSPAPK bot down\n'
-            start_msg+= 'Desarrollador: @ThenKei\n'
+            start_msg = 'Bot          : big_smoke_dl\n'
+            start_msg+= 'Desarrollador: @BigSmoke19\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -507,7 +507,7 @@ def onmessage(update,bot:ObigramClient):
                 # set in debug
             #    api_id = 13193029
             #    api_hash = '03bca249fdbe6824b1ca6d928a2e60ee' 
-            #    bot_token = '5151062359:AAE2pcB0S312wuehcIG2Joeo1Yw4cZbY_gs' 
+            #    bot_token = '5267507148:AAHxvdAtOfhMPciUfwWRhwGZcl3ayxeJcVQ' 
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -522,7 +522,7 @@ def onmessage(update,bot:ObigramClient):
 def main():
     
     #TOKEN DEL BOT
-    bot_token = '5151062359:AAE2pcB0S312wuehcIG2Joeo1Yw4cZbY_gs'
+    bot_token = '5267507148:AAHxvdAtOfhMPciUfwWRhwGZcl3ayxeJcVQ' 
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
